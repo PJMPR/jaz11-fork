@@ -24,10 +24,20 @@ repositories {
 }
 
 dependencies {
+
+    // 2. OBSŁUGA BAZY DANYCH (Potrzebna do DatabaseConnectivityDiagnostics)
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2' // Lub inny sterownik, np. 'org.postgresql:postgresql'
+
+    // 3. POZOSTAŁE STARTERY
     implementation 'org.springframework.boot:spring-boot-starter-quartz'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // LOMBOK
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // TESTY
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }

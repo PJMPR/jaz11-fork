@@ -1,5 +1,5 @@
 rootProject.name = 'Westeros'
 
-
-include 'westeros-movies-client'
 include 'westeros-updater'
+include 'westeros-diagnostics-tools'
+include 'westeros-movies-client'

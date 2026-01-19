@@ -1,1 +1,3 @@
 rootProject.name = 'westeros-data'
+include 'westeros-updater'
+project(':westeros-updater').projectDir = new File(settingsDir,'../westeros-updater')
