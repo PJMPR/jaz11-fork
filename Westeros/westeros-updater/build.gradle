@@ -25,6 +25,8 @@ repositories {
 
 dependencies {
     implementation project(':westeros-diagnostics-tools')
+    implementation project(':westeros-data')
+    implementation project(':westeros-movies-client')
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtimeOnly 'com.h2database:h2'
