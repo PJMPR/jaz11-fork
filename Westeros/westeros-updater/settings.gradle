@@ -1,5 +1,7 @@
 rootProject.name = 'westeros-updater'
 
+include 'westeros-diagnostics-tools'
+include 'westeros-updater'
 include 'westeros-movies-client'
 project(':westeros-movies-client').projectDir = new File(settingsDir,'../westeros-movies-client')
 include 'westeros-data'

@@ -18,6 +18,7 @@ repositories {
 }
 
 dependencies {
+    implementation project(':westeros-diagnostics-tools')
     implementation project(':westeros-movies-client')
     implementation project(':westeros-data')
     compileOnly 'org.projectlombok:lombok'
